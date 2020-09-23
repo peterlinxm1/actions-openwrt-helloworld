@@ -43,13 +43,7 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
-    - name: Hello World
-      if: github.event.action == 'helloworld'
-      run: |
-        echo My name is LANCE.
-        echo Hello World!
-          
-    - name: Checkout
+     - name: Checkout
       uses: actions/checkout@master
 
     - name: Initialization environment
